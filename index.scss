@@ -1,0 +1,269 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background: #f4efea;
+}
+
+.header {
+    background: white;
+}
+
+.header-top-container {
+    display: flex;
+    padding: 1rem 3.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo-container {
+    flex-grow: 1;
+    
+    &__img {
+        height: 50px;
+    }
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    
+    &__img {
+        width: 2rem;
+        border-radius: 1rem;
+        margin-right: 0.5rem; 
+    }
+    
+    &__text {
+        padding-right: 1rem;
+        border-right: 1px solid #333;
+        font-weight: bold;
+    } 
+}
+
+.favorite-container {
+    &__icon {
+        padding: 1rem;
+    }
+}
+
+/*Navigation*/
+.navigation {
+    border-top: 0.5px solid lightgray;
+    
+    &__menu {
+        margin: 0;
+        padding: 0 3.5rem;
+        
+        .sub-menu & {
+            background-color: rgba(51,51,51,.1);
+            color: white;
+        }
+        
+        &__item {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 0.85rem 1rem;
+            
+            .sub-menu & {
+                padding: 0.75rem;
+                
+                svg {
+                    fill: white;
+                    transform: rotate(-90deg);
+                    margin-bottom: 0.15rem;
+                }
+            }
+        }
+    }
+}
+
+/*Banner*/
+.banner-container {
+    background-image: url("//img.hotelspecials.nl/b52bf7888afb9527ad1babcfdd34b45d.jpeg?w=1024&quality=70");
+    background-size: cover;
+    background-position: 50%;
+    height: 400px;
+    position: relative;
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 1rem;
+    left: 3.5rem;
+    color: white;
+    text-shadow: 0 2px 0 rgba(51,51,51,.15);
+    
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: RobotoCondensed-Bold,sans-serif;
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    
+    p {
+        margin-top: 0;
+    }
+}
+
+/*Container*/
+.container {
+    padding: 3.5rem;
+    
+    &__title {
+        font-family: RobotoCondensed-Light,sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}
+
+.container-footer {
+    position: relative;
+    
+    &__button {
+        position: absolute;
+        left: 40%;
+        margin: 3.5rem 0;
+        font-family: RobotoCondensed-Bold,sans-serif;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 2px 0 0 #c5c5c5;
+        color: #595959; 
+    }
+}
+
+.cards-container {
+    display: flex;
+}
+
+.card {
+    width: 325px;
+    background-color: white;
+    margin-right: 1.5rem;
+    
+    &__header {
+        position: relative;
+        height: 250px;
+        background-image: url("//img.hotelspecials.nl/8fc79c0659738389c79d1ad596055289.jpeg?w=600&quality=70");
+        background-size: cover;
+        
+        &__info {
+            position: absolute;
+            bottom: 0;
+            padding: 1.5rem;
+            
+            &__title {
+                font-family: RobotoCondensed-Light,sans-serif;
+                font-size: 1.5rem;
+                color: white;
+                text-shadow: 0 2px 0 rgba(51,51,51,.15);
+                margin: 0;
+            }
+            
+            &__subtitle {
+                display: inline-block;
+                color: white;
+                font-family: RobotoCondensed-Regular,sans-serif;
+                margin: 0.5rem 0.5rem 0 0;
+            }
+            
+            &__rating {
+                background-color: #ff7900;
+                color: white;
+                font-weight: 700;
+                padding: 0.25rem;
+            }
+        }
+    }
+    
+    &__body {
+        padding: 1.5rem;
+    }
+    
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        &__item {
+            margin-bottom:  0.5rem;
+            
+            svg {
+                width: 1rem;
+                height: 1rem;
+                margin-right: 0.25rem;
+                fill: #ff7900;
+            }
+        }
+    }
+    
+    &__footer {
+        margin-top: 3.5rem;
+        border-top: 3px solid rgba(51,51,51,.05);
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__price-container {
+        
+        &__label {
+            font-size: .75rem;
+            margin-bottom: 0.5rem;
+            
+            span {
+                font-weight: 700;
+                text-decoration: line-through;
+                margin-left: 0.25rem;
+            }
+        }
+        
+        &__amount {
+            font-family: RobotoCondensed-Bold,sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        &__sub-label {
+            font-size: 14px;
+        }
+        
+        &__small-text {
+            color: gray;
+        }
+        
+        &__right {
+
+            &__button {
+                font-family: RobotoCondensed-Bold,sans-serif;
+                font-size: 18px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 10px;
+                padding: 0.5rem 1rem;
+                border: none;
+                background-image: none;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                white-space: nowrap;
+                cursor: pointer;
+                background: linear-gradient(to bottom,#06a1dd 0,#058acd 100%);
+                border-radius: 6px;
+                box-shadow: 0 3px 0 0 #005f85, 0 6px 0 0 rgba(51,51,51,.1);
+                color: #fff; 
+            }
+        }
+    }
+}
+
+
+
+
